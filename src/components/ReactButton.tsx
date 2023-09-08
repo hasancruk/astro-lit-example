@@ -1,14 +1,9 @@
-import type {EventName} from '@lit-labs/react';
-
 import * as React from "react";
 import {createComponent} from "@lit-labs/react";
-import { Button } from "./button.js";
+import { Button } from "./jsbutton.js";
 
 export const ReactButton = createComponent({
-  tagName: 'cr-button',
+  tagName: 'js-button',
   elementClass: Button,
   react: React,
-  events: {
-    onClick: 'pointerdown' as EventName<PointerEvent>,
-  },
 });
