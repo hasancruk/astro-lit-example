@@ -49,3 +49,8 @@ export class Button extends LitElement {
   }
 }
 
+declare global {
+  interface HTMLElementTagNameMap {
+    'cr-button': Button;
+  }
+}
