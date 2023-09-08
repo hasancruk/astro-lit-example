@@ -2,6 +2,7 @@
 import { Button } from "../components/button.ts";
 import { Button as JsButton } from "../components/jsbutton.js";
 import { Container } from "../components/ReactContainer.tsx";
+import { ReactButton } from "../components/ReactButton.tsx";
 ---
 
 <html lang="en">
@@ -33,7 +34,7 @@ import { Container } from "../components/ReactContainer.tsx";
         <h2>React component</h2>
         <p>Below is a React component wrapping the native web component</p>
       </header>
-      <Container client:only="react" />
+      <ReactButton variant="secondary" client:only="react">React click me</ReactButton>
     </section>
 	</body>
 </html>
